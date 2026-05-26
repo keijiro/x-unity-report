@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>X 日本 Unity 関連ポストまとめ - 2026-05-24 (日)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --fg: #111;
+    --muted: #555;
+    --accent: #1da1f2;
+    --border: #d8d8d8;
+    --bg: #fafafa;
+  }
+  html, body { background: var(--bg); color: var(--fg); }
+  body {
+    font-family: "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP",
+                 -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+    line-height: 1.75;
+    max-width: 760px;
+    margin: 2.5em auto;
+    padding: 0 1.2em 4em;
+    font-size: 16px;
+  }
+  h1 { font-size: 1.7em; border-bottom: 2px solid var(--fg); padding-bottom: 0.3em; margin-top: 0; }
+  h2 { font-size: 1.3em; border-left: 4px solid var(--accent); padding-left: 0.5em; margin-top: 2em; }
+  h3 { font-size: 1.1em; margin-top: 1.5em; color: #333; }
+  p, li { font-size: 1em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code {
+    background: #eef1f3; padding: 0.05em 0.35em; border-radius: 3px; font-size: 0.92em;
+  }
+  .meta-header {
+    color: var(--muted); font-size: 0.85em; margin-bottom: 2em;
+  }
+
+  /* Tweet card wrapper */
+  figure.tweet-card {
+    margin: 1.4em 0;
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+  figure.tweet-card .twitter-tweet { margin: 0 !important; }
+  figure.tweet-card .print-fallback { display: none; }
+  figure.tweet-missing p {
+    border: 1px dashed #c33; background: #fef0f0; color: #c33;
+    padding: 0.6em 0.9em; border-radius: 4px; font-size: 0.92em;
+  }
+
+  /* ----- Print stylesheet ----- */
+  @media print {
+    @page { margin: 18mm 16mm; }
+    html, body { background: #fff; color: #000; }
+    body {
+      max-width: none; margin: 0; padding: 0;
+      font-size: 11pt; line-height: 1.55;
+    }
+    h1 { font-size: 18pt; }
+    h2 {
+      font-size: 13pt; border-left-color: #000;
+      page-break-after: avoid; break-after: avoid;
+    }
+    h3 { font-size: 11.5pt; page-break-after: avoid; break-after: avoid; }
+    a { color: #000; text-decoration: underline; }
+
+    figure.tweet-card .twitter-tweet,
+    figure.tweet-card iframe[src*="twitter.com"],
+    figure.tweet-card iframe[src*="x.com"] {
+      display: none !important;
+    }
+    figure.tweet-card .print-fallback {
+      display: block;
+      border: 0.7pt solid #888;
+      border-left: 3pt solid #000;
+      background: #f5f5f5;
+      padding: 6pt 9pt;
+      font-size: 9.5pt;
+      break-inside: avoid; page-break-inside: avoid;
+    }
+    figure.tweet-card .pf-header { margin-bottom: 3pt; }
+    figure.tweet-card .pf-meta { color: #444; font-weight: 400; font-size: 8.5pt; }
+    figure.tweet-card .pf-text { margin: 2pt 0 4pt; }
+    figure.tweet-card .pf-link a {
+      font-size: 8.5pt; color: #444; word-break: break-all;
+    }
+  }
+</style>
+</head>
+<body>
+<p class="meta-header">対象期間: 2026-05-24 (JST) / 対象ポスト: 829 件 / 引用カード: 21 件 / 生成: claude-opus-4-7</p>
+<h1>X 日本 Unity 関連ポストまとめ - 2026-05-24 (日)</h1>
+
+<h2>1. 全体サマリー</h2>
+<p>2026-05-24 の日本語 Unity 関連 TL は、午後から夕方にかけて VRChat 側で発生したサーバー障害 (Unity SDK にサインインできない / アバターアップロード不可) によって、改変勢の「Unity を開いたのにアップロードできない」という嘆きが大量に流れる一日となった。一方で、個人ゲーム開発勢は「Codex / Claude / Unity AI / MCP」を絡めた AI 駆動開発の話題で盛り上がり、ゲームエンジン論 (Unity vs Godot / Cocos) のスレッドも複数熱を帯びた。BitSummit PUNCH 関連ポストや、RPG ツクール新作「U2U」が Unity ベースであるという話題、Unity アセットストアの $2 セールなど、業界・ツール周りのニュースも多く、「VRChat 改変文化」「インディー開発」「商用エンジン論」の 3 層が並走する典型的な週末の風景である。</p>
+
+<h2>2. 主なトピック・話題のクラスタ</h2>
+
+<h3>VRChat サーバー障害と Unity SDK サインイン不能</h3>
+<p>午後、VRChat 側の API 障害で VRCSDK にサインインできず、改変済みアバターのアップロードが軒並み止まった。「Unity 触れるけどアップロード出来ない」「鯖落ち？」というポストが大量発生し、改変モチベーションが空中分解した投稿者が続出。<a href="https://x.com/uniumasugiru">@uniumasugiru</a> の見たことないエラー報告 (9920 views) など、初心者にとっては原因の切り分けすらできない状況だった。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">助けてください。Unityでクエスト対応させたアバターアップロードしようと思ったら見たことないエラーが出てきました<br>詳しい人教えてください</p>&mdash; ヤマト丸20030723@高潔なるQuest単機エクLOVER (<a href="https://twitter.com/uniumasugiru">@uniumasugiru</a>) <a href="https://twitter.com/uniumasugiru/status/2058439775028388103">2026-05-24 06:47 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@uniumasugiru</strong> <span class="pf-meta">· 2026-05-24 06:47 UTC · ❤ 59 · 🔁 3 · 👁 9,920</span></div><div class="pf-text">助けてください。Unityでクエスト対応させたアバターアップロードしようと思ったら見たことないエラーが出てきました<br>詳しい人教えてください</div><div class="pf-link"><a href="https://x.com/uniumasugiru/status/2058439775028388103">https://x.com/uniumasugiru/status/2058439775028388103</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ぶいちゃ鯖落ち～<br>Unityアップロードできねえ</p>&mdash; ラトル (<a href="https://twitter.com/lattle319">@lattle319</a>) <a href="https://twitter.com/lattle319/status/2058353162982187317">2026-05-24 01:03 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@lattle319</strong> <span class="pf-meta">· 2026-05-24 01:03 UTC · ❤ 10 · 🔁 0 · 👁 287</span></div><div class="pf-text">ぶいちゃ鯖落ち～<br>Unityアップロードできねえ</div><div class="pf-link"><a href="https://x.com/lattle319/status/2058353162982187317">https://x.com/lattle319/status/2058353162982187317</a></div></figcaption></figure>
+
+<h3>RPG ツクール「U2U」が Unity ベースという話題</h3>
+<p>新作 RPG ツクール U2U が「Unity で作られた」だけなのか「Unity 上で動くツール」なのかで議論が起こり、後者と判明したことで「UNITE の悪夢」を思い出すユーザーが続出。一方で「Unity ベースなら UI 設定がグラフィカルで楽そう」と前向きな見方もあり、過去作 UNITE のトラウマと期待が混在している。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">u2uが「Unityで作られた」だけなのか、「Unity上で動くツールなのか」がかなり気になっていたけど、後者なのね<br>これは全員Uniteの悪夢が頭を掠めるよね……<br>それにしてもu2u出たら、本格的にUniteの存在意義が消滅してしまいますね</p>&mdash; 空野こんこん＠個人ゲーム開発者 (<a href="https://twitter.com/sorano_concon_g">@sorano_concon_g</a>) <a href="https://twitter.com/sorano_concon_g/status/2058340536956899365">2026-05-24 00:13 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@sorano_concon_g</strong> <span class="pf-meta">· 2026-05-24 00:13 UTC · ❤ 6 · 🔁 0 · 👁 541</span></div><div class="pf-text">u2uが「Unityで作られた」だけなのか、「Unity上で動くツールなのか」がかなり気になっていたけど、後者なのね<br>これは全員Uniteの悪夢が頭を掠めるよね……<br>それにしてもu2u出たら、本格的にUniteの存在意義が消滅してしまいますね</div><div class="pf-link"><a href="https://x.com/sorano_concon_g/status/2058340536956899365">https://x.com/sorano_concon_g/status/2058340536956899365</a></div></figcaption></figure>
+
+<h3>AI 駆動 Unity 開発 (Codex / Claude / Unity AI / MCP)</h3>
+<p>「プログラミング学習なしでスマホ用アクション RPG を作った」動画が複数人に共有され、参考になるという反応が広がった。Codex に Unity プロジェクトの性能改善や ML-Agents 学習を任せたり、Unity MCP でシーンを生成させたり、Antigravity を試したりという報告も多数。Unity AI のオープンベータ公開や、Light2DProvider 追加 (URP 17.5 / Unity 6.5) などの公式機能アップデートも流れた。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">200時間Unityゲーム作り、今回も人間の学習が心地よい動画だった。あんまりAI使ったモノ作りしたことない人が実際のところを知るのにいいと思います！<br><br>【プログラミング学習なし】ゲーム開発素人がAIを駆使してスマホ用アクションRPGを作ってみた記録。【Unity】...</p>&mdash; 和牛先生 (<a href="https://twitter.com/3dcganimation">@3dcganimation</a>) <a href="https://twitter.com/3dcganimation/status/2058383022370730403">2026-05-24 03:02 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@3dcganimation</strong> <span class="pf-meta">· 2026-05-24 03:02 UTC · ❤ 37 · 🔁 3 · 👁 4,033</span></div><div class="pf-text">200時間Unityゲーム作り、今回も人間の学習が心地よい動画だった。あんまりAI使ったモノ作りしたことない人が実際のところを知るのにいいと思います！<br><br>【プログラミング学習なし】ゲーム開発素人がAIを駆使してスマホ用アクションRPGを作ってみた記録。【Unity】...</div><div class="pf-link"><a href="https://x.com/3dcganimation/status/2058383022370730403">https://x.com/3dcganimation/status/2058383022370730403</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">UniCLI経由でCodexに性能改善タスク振ったら、勝手にProfiler起動して現状調査までやってくれた<br><br>skillに性能改善の観点を入れておいたのが効いてるっぽい。<br>想定外のことをやらないのも良き<br><br>UnityEditor内の処理も任せられるので、ガンガンCodexにまかせていく<br><br>Unity + Codex +</p>&mdash; わい|ゲーム出す！ (<a href="https://twitter.com/yhei_hei">@yhei_hei</a>) <a href="https://twitter.com/yhei_hei/status/2058473084617904592">2026-05-24 09:00 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@yhei_hei</strong> <span class="pf-meta">· 2026-05-24 09:00 UTC · ❤ 1 · 🔁 0 · 👁 102</span></div><div class="pf-text">UniCLI経由でCodexに性能改善タスク振ったら、勝手にProfiler起動して現状調査までやってくれた<br><br>skillに性能改善の観点を入れておいたのが効いてるっぽい。<br>想定外のことをやらないのも良き<br><br>UnityEditor内の処理も任せられるので、ガンガンCodexにまかせていく<br><br>Unity + Codex +</div><div class="pf-link"><a href="https://x.com/yhei_hei/status/2058473084617904592">https://x.com/yhei_hei/status/2058473084617904592</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">UnityでAIを使った開発、ちゃんとパッケージ+Prefab構成にして、外部プロジェクトでPrefab開く形にしておくとパッケージ側の更新はCodex君が思いの他頑張ってくれる(パッケージ側はUnity閉じとく必要)<br>これは良いぞ</p>&mdash; きゅーすけ (<a href="https://twitter.com/kyusque">@kyusque</a>) <a href="https://twitter.com/kyusque/status/2058489831794303260">2026-05-24 10:06 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@kyusque</strong> <span class="pf-meta">· 2026-05-24 10:06 UTC · ❤ 0 · 🔁 0 · 👁 88</span></div><div class="pf-text">UnityでAIを使った開発、ちゃんとパッケージ+Prefab構成にして、外部プロジェクトでPrefab開く形にしておくとパッケージ側の更新はCodex君が思いの他頑張ってくれる(パッケージ側はUnity閉じとく必要)<br>これは良いぞ</div><div class="pf-link"><a href="https://x.com/kyusque/status/2058489831794303260">https://x.com/kyusque/status/2058489831794303260</a></div></figcaption></figure>
+
+<h3>ゲームエンジン論争 (Unity vs Godot / Cocos)</h3>
+<p>Unity の価格改定騒動を引き合いに「素早く逃げ出さないと詰む」と語る <a href="https://x.com/EzoeRyou">@EzoeRyou</a> のポストや、AI 活用勢が Godot や Cocos に移行しているという <a href="https://x.com/AonekoSS">@AonekoSS</a> の観察、UI を剥がせるかという議論など、エンジン乗り換えを巡るシリアスな対話が続いた。一方「Unity 永住の民」「Unity に戻ってきた」「アセット資産を捨てる勇気はない」など、留まる派の声も同程度に多い。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">Unity、以前バカみたいな価格改定騒動を引き起こしたので、あれで見切りをつけなかった人間はリスク管理がなっていない。あれは悪名高いOracleやBroadcomと同じムーブなので素早く逃げ出さないと詰む。</p>&mdash; 江添亮 (<a href="https://twitter.com/EzoeRyou">@EzoeRyou</a>) <a href="https://twitter.com/EzoeRyou/status/2058250153539330200">2026-05-23 18:14 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@EzoeRyou</strong> <span class="pf-meta">· 2026-05-23 18:14 UTC · ❤ 101 · 🔁 28 · 👁 0</span></div><div class="pf-text">Unity、以前バカみたいな価格改定騒動を引き起こしたので、あれで見切りをつけなかった人間はリスク管理がなっていない。あれは悪名高いOracleやBroadcomと同じムーブなので素早く逃げ出さないと詰む。</div><div class="pf-link"><a href="https://x.com/EzoeRyou/status/2058250153539330200">https://x.com/EzoeRyou/status/2058250153539330200</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ゲーム個人開発のAI活用勢がGodotとかCocosとかに移行してるって話を見かけた。<br>ノーコード寄りなエンジンほど、その部分がAIにとっては足枷になるというか……<br>一応Unity AIとかUE5のMCPとか、手段があるにはあるんだけども。</p>&mdash; 青猫 (<a href="https://twitter.com/AonekoSS">@AonekoSS</a>) <a href="https://twitter.com/AonekoSS/status/2058550654046736854">2026-05-24 14:08 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@AonekoSS</strong> <span class="pf-meta">· 2026-05-24 14:08 UTC · ❤ 70 · 🔁 14 · 👁 0</span></div><div class="pf-text">ゲーム個人開発のAI活用勢がGodotとかCocosとかに移行してるって話を見かけた。<br>ノーコード寄りなエンジンほど、その部分がAIにとっては足枷になるというか……<br>一応Unity AIとかUE5のMCPとか、手段があるにはあるんだけども。</div><div class="pf-link"><a href="https://x.com/AonekoSS/status/2058550654046736854">https://x.com/AonekoSS/status/2058550654046736854</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">現代のゲームエンジン、「ザツに作りたい」という欲求に応えるために設計されながら、最終的には「ザツに作ると詰む」という道に至る。UEのブループリントもunityのMonoBehaviourもそう。</p>&mdash; たにみちの@BA-KU (<a href="https://twitter.com/taninon">@taninon</a>) <a href="https://twitter.com/taninon/status/2058356223934967853">2026-05-24 01:15 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@taninon</strong> <span class="pf-meta">· 2026-05-24 01:15 UTC · ❤ 131 · 🔁 18 · 👁 0</span></div><div class="pf-text">現代のゲームエンジン、「ザツに作りたい」という欲求に応えるために設計されながら、最終的には「ザツに作ると詰む」という道に至る。UEのブループリントもunityのMonoBehaviourもそう。</div><div class="pf-link"><a href="https://x.com/taninon/status/2058356223934967853">https://x.com/taninon/status/2058356223934967853</a></div></figcaption></figure>
+
+<h3>Unity アセットストア「Two Dollar Sale」</h3>
+<p>$2〜$4 で 90% 以上 OFF の Mega Bundle / City Pack / Industrial Props など、アセットセールの紹介ポストが多数。<a href="https://x.com/patsupyon">@patsupyon</a> は「1,999 ドル得した」と大量購入を報告。VRChat ワールド制作・インディー開発の両層から「とりあえず買っておく」動きが見られた。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">$159の都市アセットが$3.19は、ぶっこわれ価格では…？<br>​<br>高層ビルの遠景、夜の窓明かり、<br>昼夜の空までまとめて入ったローポリ都市パック<br>​<br>VRやモバイル向けの遠景や夜景をサッと足したい時に強い<br>​<br>『City Pack』<br>$159.49 =&gt; $3.19   98%OFF<br><br>https://<br>prf.hn/click/camref:1<br>011lGbg/pubref:oNeMaNa/destination:https://assetstore.unity.com/packages/3d/props/exterior/city-pack-42685<br>…<br>#Unity ゲーム開発 VRChat</p>&mdash; AssetSaleLove @汗人柱 (<a href="https://twitter.com/AssetLove">@AssetLove</a>) <a href="https://twitter.com/AssetLove/status/2058510993962176982">2026-05-24 11:30 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@AssetLove</strong> <span class="pf-meta">· 2026-05-24 11:30 UTC · ❤ 156 · 🔁 31 · 👁 0</span></div><div class="pf-text">$159の都市アセットが$3.19は、ぶっこわれ価格では…？<br>​<br>高層ビルの遠景、夜の窓明かり、<br>昼夜の空までまとめて入ったローポリ都市パック<br>​<br>VRやモバイル向けの遠景や夜景をサッと足したい時に強い<br>​<br>『City Pack』<br>$159.49 =&gt; $3.19   98%OFF<br><br>https://<br>prf.hn/click/camref:1<br>011lGbg/pubref:oNeMaNa/destination:https://assetstore.unity.com/p…</div><div class="pf-link"><a href="https://x.com/AssetLove/status/2058510993962176982">https://x.com/AssetLove/status/2058510993962176982</a></div></figcaption></figure>
+
+<h3>BOOTH 新作ギミック・アバター改変アセット</h3>
+<p>YR STUDIO の「白羽の矢ギミック【unity/VRChat/FBX】」(782 likes, 195 RT) が突出してバズり、「会話を切りたい時にオススメ」というユーモアで拡散。pandrabox のフルトラ適正向上ツール、Hatotools の太もも/おしり/水着フィッターなど、Unity 完結型ツールへの需要が高い。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">お前に向かってインバイトが飛んできます（物理）<br><br>会話を切りたい時にオススメ！<br>オブジェクトを変更すれば矢以外も右手でキャッチできます。<br>白羽の矢ギミック【unity/VRChat/FBX】 | YR STUDIO <br>https://<br>yoruoni.booth.pm/items/8404311 #booth_pm</p>&mdash; 夜オニ_vrc (<a href="https://twitter.com/yoruoni_vrc">@yoruoni_vrc</a>) <a href="https://twitter.com/yoruoni_vrc/status/2058473086509539532">2026-05-24 09:00 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@yoruoni_vrc</strong> <span class="pf-meta">· 2026-05-24 09:00 UTC · ❤ 782 · 🔁 195 · 👁 0</span></div><div class="pf-text">お前に向かってインバイトが飛んできます（物理）<br><br>会話を切りたい時にオススメ！<br>オブジェクトを変更すれば矢以外も右手でキャッチできます。<br>白羽の矢ギミック【unity/VRChat/FBX】 | YR STUDIO <br>https://<br>yoruoni.booth.pm/items/8404311 #booth_pm</div><div class="pf-link"><a href="https://x.com/yoruoni_vrc/status/2058473086509539532">https://x.com/yoruoni_vrc/status/2058473086509539532</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">HatoTools の各ツール、出品前に NUnit でユニットテスト書いてます。<br><br>  太ももフィッター 66/66 PASS<br>  おしりフィッター 51/51 PASS<br>  水着フィッター   51/51 PASS<br>  パフォゲ通過チェッカー 119/119 PASS<br><br>  VRChat ツールでテスト書く文化、もっと広まってほしい。<br><br>  #VRChat改変 #Unity</p>&mdash; HatoTools＠Booth販売中 (<a href="https://twitter.com/Hatotools_VRC">@Hatotools_VRC</a>) <a href="https://twitter.com/Hatotools_VRC/status/2058508622230073789">2026-05-24 11:21 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@Hatotools_VRC</strong> <span class="pf-meta">· 2026-05-24 11:21 UTC · ❤ 2 · 🔁 0 · 👁 23</span></div><div class="pf-text">HatoTools の各ツール、出品前に NUnit でユニットテスト書いてます。<br><br>  太ももフィッター 66/66 PASS<br>  おしりフィッター 51/51 PASS<br>  水着フィッター   51/51 PASS<br>  パフォゲ通過チェッカー 119/119 PASS<br><br>  VRChat ツールでテスト書く文化、もっと広まってほしい。<br><br>  #VRChat改変 #Unity</div><div class="pf-link"><a href="https://x.com/Hatotools_VRC/status/2058508622230073789">https://x.com/Hatotools_VRC/status/2058508622230073789</a></div></figcaption></figure>
+
+<h3>個人ゲーム開発の進捗報告</h3>
+<p>SadSuperAI の「ラブモン」カードゲーム、ARegia31 の AutoTurret スキル、ForestSnack の無人島ゲーム、yajuekodev のヘリ墜落処理、welovegamesinc のヴァンサバ系などジャンル多彩。<a href="https://x.com/risako_xxx">@risako_xxx</a> の「完全独学で App Store に並んだ」という感慨深いポストも反響を呼んだ。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">#ラブモン図鑑<br>Unityでラブモンのカードゲーム開発中<br>現在Webでプロトタイプが遊べます！<br><br>アップデート予告(？)<br>１．カード追加<br>２．デッキ編集機能の整備<br>３．対戦相手の追加<br>来週中にはこのアップデートはリリースしたい<br><br>企画元：アカン(<br>@akan_mori<br>)様<br>ロゴ：喧騒駅から車で9分(<br>@KIRINGUTAIMU<br>)様</p>&mdash; 悲しきすーぱーAI (<a href="https://twitter.com/SadSuperAI">@SadSuperAI</a>) <a href="https://twitter.com/SadSuperAI/status/2058338252411871556">2026-05-24 00:04 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@SadSuperAI</strong> <span class="pf-meta">· 2026-05-24 00:04 UTC · ❤ 546 · 🔁 64 · 👁 0</span></div><div class="pf-text">#ラブモン図鑑<br>Unityでラブモンのカードゲーム開発中<br>現在Webでプロトタイプが遊べます！<br><br>アップデート予告(？)<br>１．カード追加<br>２．デッキ編集機能の整備<br>３．対戦相手の追加<br>来週中にはこのアップデートはリリースしたい<br><br>企画元：アカン(<br>@akan_mori<br>)様<br>ロゴ：喧騒駅から車で9分(<br>@KIRINGUTAIMU<br>)様</div><div class="pf-link"><a href="https://x.com/SadSuperAI/status/2058338252411871556">https://x.com/SadSuperAI/status/2058338252411871556</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">学校も仕事もプログラミングとは全く無縁で完全独学で、BlenderとUnityを必死に勉強して、気づけばApp Storeに自分のゲームが並ぶところまで来られたんだなとふと思いました。<br>途中で心が折れそうになったこともあったけど、諦めずに形にできて本当によかった<br>#ゲーム開発</p>&mdash; Risa Labo (<a href="https://twitter.com/risako_xxx">@risako_xxx</a>) <a href="https://twitter.com/risako_xxx/status/2058379446751818062">2026-05-24 02:47 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@risako_xxx</strong> <span class="pf-meta">· 2026-05-24 02:47 UTC · ❤ 59 · 🔁 1 · 👁 1,626</span></div><div class="pf-text">学校も仕事もプログラミングとは全く無縁で完全独学で、BlenderとUnityを必死に勉強して、気づけばApp Storeに自分のゲームが並ぶところまで来られたんだなとふと思いました。<br>途中で心が折れそうになったこともあったけど、諦めずに形にできて本当によかった<br>#ゲーム開発</div><div class="pf-link"><a href="https://x.com/risako_xxx/status/2058379446751818062">https://x.com/risako_xxx/status/2058379446751818062</a></div></figcaption></figure>
+
+<h3>BitSummit PUNCH / 産業イベント</h3>
+<p>GameMakersJP による『A Tiny Wander』取材レポ (9977 views) は Unity + Blender 制作の実例。BitSummitGameJam2026 で Unity プログラマーとして『RISOLUTION』が審査員賞・ゲームデザイン賞を受賞した <a href="https://x.com/Kokuten01234">@Kokuten01234</a> の報告など、リアルイベント由来の話題も。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">歩荷のブタが主役の探索謎解きアドベンチャー『A Tiny Wander』取材＆試遊レポ【BitSummit PUNCH】<br><br>https://<br>gamemakers.jp/article/2026_0<br>5_24_138117/<br>…<br><br>UnityとBlenderで鋭意開発中の本作。バグから生まれたモーションやライトの温もりを感じる描画表現の工夫などを聞いてきた #BitSummit</p>&mdash; ゲームメーカーズ (<a href="https://twitter.com/GameMakersJP">@GameMakersJP</a>) <a href="https://twitter.com/GameMakersJP/status/2058525948442763550">2026-05-24 12:30 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@GameMakersJP</strong> <span class="pf-meta">· 2026-05-24 12:30 UTC · ❤ 40 · 🔁 4 · 👁 9,977</span></div><div class="pf-text">歩荷のブタが主役の探索謎解きアドベンチャー『A Tiny Wander』取材＆試遊レポ【BitSummit PUNCH】<br><br>https://<br>gamemakers.jp/article/2026_0<br>5_24_138117/<br>…<br><br>UnityとBlenderで鋭意開発中の本作。バグから生まれたモーションやライトの温もりを感じる描画表現の工夫などを聞いてきた #BitSummit</div><div class="pf-link"><a href="https://x.com/GameMakersJP/status/2058525948442763550">https://x.com/GameMakersJP/status/2058525948442763550</a></div></figcaption></figure>
+
+<h2>3. 注目すべき個別の動き</h2>
+<ul>
+<li><strong>「白羽の矢ギミック」の爆発的拡散</strong> — yoruoni_vrc によるネタ系 VRChat ギミック。「インバイトが飛んでくる (物理)」というユーモア込みの紹介文がハマり、改変文化のミーム性を象徴する一本となった。</li>
+<li><strong>ラブモン カードゲーム開発進捗</strong> — SadSuperAI が #ラブモン図鑑 文脈でプロトタイプ公開。Web で遊べる段階に到達し、企画元・ロゴ提供者をクレジットする丁寧な開発スタイルが評価されている。</li>
+<li><strong>ezoeryou による Unity 警鐘ポスト</strong> — 価格改定騒動を引き合いに Oracle / Broadcom と並べる強い表現で 101 likes / 28 RT。Godot/Cocos 移行論の起点の一つになった。</li>
+<li><strong>BitSummitGameJam2026 受賞報告</strong> — Kokuten01234 が Unity プログラマーとして審査員賞・ゲームデザイン賞のダブル受賞。Sentiment 5 で本日もっとも明確なポジティブ事案。</li>
+<li><strong>「200時間 Unity ゲーム作り」シリーズへの言及</strong> — 3dcganimation, KSJP9, chom, maxima_hikky など複数のクリエイターが同じ YouTube 動画を共有し、「人間の学習が心地よい」「AI 活用の実情がわかる」と肯定的に拡散。AI 開発を観察するメタ的なコンテンツへの関心の高さを示す。</li>
+</ul>
+
+<h2>4. 感情・トーン分析</h2>
+<p>全体としては<strong>ポジティブとネガティブがほぼ拮抗</strong>。ポジティブ側は「進捗できた」「改変かわいい」「Unity 撮影習得した」「PC 強くした」など制作の達成感系が中心で、susuiro10sora の「Blender→Unity→三人称視点実現」や risako_xxx の App Store 公開報告など、長期努力が実った報告が高評価を得ている。</p>
+<p>ネガティブ側は本日特殊で、VRChat 鯖落ちに起因する「アップロードできない」「Unity 触ってるのに無意味」系が午後以降集中。Syarumusyan_Vrc の「Unity とお塩しました お前、嫌い」(-4) や weresreik の「unity はクソ」(-4)、hrs0_0m の「Unity とお塩した ガチしね」(-5) など極端な発露も散見されるが、半数以上はネタ・愛憎入り混じったトーンで、本気の離脱というより「Unity あるある」の慣用句化が進んでいる印象。</p>
+
+<h2>5. バグ・不満・要望の傾向</h2>
+<ul>
+<li><strong>VRCSDK サインイン障害</strong>: 本日もっとも多発。Unity 側に責はないが、ユーザー体感としては「Unity が壊れた」と受け取られがち。</li>
+<li><strong>Editor のメモリ消費・重さ</strong>: 「起動しただけでメモリ食う」「32GB でもキツい」「Unity しながら VRC するとカクつく」など、Editor 肥大化への不満が複数。yhvh2525 は「Unity は多機能・高性能だが抱え込みすぎて肥大した」と分析。</li>
+<li><strong>マテリアル/シェーダー破損</strong>: PC フリーズ後に liltoon が消失、再インストールで復帰、という事例 (sol_tora, crossmozq)。Unity 画面と VRChat 内で見た目が違うという定番の悩みも複数。</li>
+<li><strong>Animator / Animation 関連クラッシュ</strong>: ps_kawasy の「Animator の矢印クリックで落ちる」「複数マテリアル同時切替で Unity が耐えられない」報告。</li>
+<li><strong>Blender → Unity の挙動差異</strong>: 「Blender では貫通してないのに Unity で貫通」「補助ボーンの回転制限」「humanoid 設定で薬指がねじれる」など、FBX 受け渡し周辺の罠が継続的に報告。</li>
+<li><strong>Unity AI Assistant の課金トラブル</strong>: OvlXU3paPB49540 が「無料体験終了後に自動課金されたがクレジット 0」と報告。</li>
+<li><strong>U:nity 製品ロゴ問題</strong>: Lichiphen が「あのロゴが出るのが嫌」と。</li>
+</ul>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">もしかして：たくさんのオブジェクトのマテリアルをAnimationで同時に切り替えるとUnityさん耐えられないの・・・！？</p>&mdash; かわしぃ@VRアート戦士 (<a href="https://twitter.com/ps_kawasy">@ps_kawasy</a>) <a href="https://twitter.com/ps_kawasy/status/2058482678836736440">2026-05-24 09:38 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@ps_kawasy</strong> <span class="pf-meta">· 2026-05-24 09:38 UTC · ❤ 1 · 🔁 0 · 👁 143</span></div><div class="pf-text">もしかして：たくさんのオブジェクトのマテリアルをAnimationで同時に切り替えるとUnityさん耐えられないの・・・！？</div><div class="pf-link"><a href="https://x.com/ps_kawasy/status/2058482678836736440">https://x.com/ps_kawasy/status/2058482678836736440</a></div></figcaption></figure>
+
+<h2>6. 学習・チュートリアル・コミュニティ活動</h2>
+<p>独学組の存在感が大きい一日だった。<a href="https://x.com/susuiro10sora">@susuiro10sora</a> は Blender → キャラクリ → Unity の長い独学路線をついに三人称視点移動として結実させ、<a href="https://x.com/risako_xxx">@risako_xxx</a> は完全独学で App Store 公開まで漕ぎ着けた感慨を投稿。<a href="https://x.com/yajuekodev">@yajuekodev</a> は SkillCert の「Unity 認定 プロフェッショナル：プログラマー」を 100% で初回満点クリア。</p>
+<p>勉強会・教材文脈では、ITeensLab の日曜 Unity クラス開講、tsukurun の放課後 Unity 募集、<a href="https://x.com/Qiita_Unity2">@Qiita_Unity2</a> による URP 17.5 や CSV 読み込みの Qiita 記事紹介、<a href="https://x.com/Zenn_Unity">@Zenn_Unity</a> による敵 AI ターゲット切替や ShaderGraph 解説の Zenn 記事紹介などが目立った。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ついにここまで動かせるようになった<br><br>Blenderの勉強から始め、3Dキャラクリし、Unity勉強し、キーボード入力からの三人称視点で移動を実現した<br><br>#Unity #3DCG #ゲーム制作</p>&mdash; 煤色ソラ (<a href="https://twitter.com/susuiro10sora">@susuiro10sora</a>) <a href="https://twitter.com/susuiro10sora/status/2058496917534097542">2026-05-24 10:34 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@susuiro10sora</strong> <span class="pf-meta">· 2026-05-24 10:34 UTC · ❤ 68 · 🔁 6 · 👁 1,110</span></div><div class="pf-text">ついにここまで動かせるようになった<br><br>Blenderの勉強から始め、3Dキャラクリし、Unity勉強し、キーボード入力からの三人称視点で移動を実現した<br><br>#Unity #3DCG #ゲーム制作</div><div class="pf-link"><a href="https://x.com/susuiro10sora/status/2058496917534097542">https://x.com/susuiro10sora/status/2058496917534097542</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">初満点！！<br>時間あったら試験を予約します<br><br>SkillCert で「Unity認定 プロフェッショナル：プログラマー」を解いてみた！<br>正答率 100% <br>#スキルサート #資格勉強 #unity #unityエンジニア</p>&mdash; Yajueko@Yankee Rabbits(Steam) (<a href="https://twitter.com/yajuekodev">@yajuekodev</a>) <a href="https://twitter.com/yajuekodev/status/2058212633539670120">2026-05-23 15:45 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@yajuekodev</strong> <span class="pf-meta">· 2026-05-23 15:45 UTC · ❤ 12 · 🔁 2 · 👁 448</span></div><div class="pf-text">初満点！！<br>時間あったら試験を予約します<br><br>SkillCert で「Unity認定 プロフェッショナル：プログラマー」を解いてみた！<br>正答率 100% <br>#スキルサート #資格勉強 #unity #unityエンジニア</div><div class="pf-link"><a href="https://x.com/yajuekodev/status/2058212633539670120">https://x.com/yajuekodev/status/2058212633539670120</a></div></figcaption></figure>
+
+<h2>7. 商用/インディー/VRChat 別の動き</h2>
+
+<h3>商用・産業向け</h3>
+<p>RayNeo X3 Pro での Unity アプリ動作報告 (mouri45)、Unity 産業 DX カンファレンス 2026 への参加告知、Substance Painter 書き出しを UE5/Unity HDRP/Maya で比較した techotakulab の解説など、業務寄りの落ち着いたトーン。Takumi3Dcamera は「仕事で Unity を触る人は登録してほしい」と業界イベントを案内 (2352 views)。</p>
+
+<h3>インディー個人開発</h3>
+<p>AI 駆動 (Codex / Claude / Gemini / Unity AI / MCP) を絡めた制作報告が顕著に増加。<a href="https://x.com/Motton_2_Nari">@Motton_2_Nari</a> は「Claude と Gemini で別々に Unity 開発、脳みそパンク」、<a href="https://x.com/foxFizzingcandy">@foxFizzingcandy</a> は「Unity CLI Loop 導入で質が上がった」と報告。<a href="https://x.com/kyusque">@kyusque</a> は「パッケージ + Prefab 構成にすれば Codex がよく頑張る」とノウハウ共有。一方で <a href="https://x.com/the_wheel_2024">@the_wheel_2024</a> は ML-Agents の Codex 自動化が 49 回連続失敗、Antigravity を試した BehindForestBoy も挙動に苦笑するなど、銀の弾丸ではない現状も率直に語られている。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">ゲーム制作14日目<br>新しくスライディングを実装しました。<br>バグなども直して基本の動きは大体出来上がってきました<br>今からゲーム性だったりUIなど作り込んでいきたいと思います！<br>#unity #ゲーム制作 #blender</p>&mdash; zack (<a href="https://twitter.com/00zackzack00">@00zackzack00</a>) <a href="https://twitter.com/00zackzack00/status/2058507298264490275">2026-05-24 11:15 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@00zackzack00</strong> <span class="pf-meta">· 2026-05-24 11:15 UTC · ❤ 95 · 🔁 6 · 👁 1,963</span></div><div class="pf-text">ゲーム制作14日目<br>新しくスライディングを実装しました。<br>バグなども直して基本の動きは大体出来上がってきました<br>今からゲーム性だったりUIなど作り込んでいきたいと思います！<br>#unity #ゲーム制作 #blender</div><div class="pf-link"><a href="https://x.com/00zackzack00/status/2058507298264490275">https://x.com/00zackzack00/status/2058507298264490275</a></div></figcaption></figure>
+
+<h3>VRChat 改変・ワールド制作</h3>
+<p>本日もっともボリュームが大きい層。MAYO / Sio / ルミナ / Phenøa / シフォン / シュティーア / 真央 / ハム / キプフェル / カザリス / 狛乃 など個別アバター名が大量に飛び交い、ツール側では「もちふぃった〜」「Robust Weight Transfer」「FaceEmo」「AvaPo」「ALCOM (VCC 代替)」が高評価。<a href="https://x.com/rinakorokoro_">@rinakorokoro_</a> は Robust Weight Transfer の貫通対策に感動、<a href="https://x.com/toumun_vrc">@toumun_vrc</a> は ALCOM が「よく馴染む」と評価している。Unity 撮影 (透過 2048×2048) の需要も拡大しており、テスター募集要件に組み込まれる例も。</p>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">初　め　て　の<br><br>Unity<br><br>さ　つ　え　い</p>&mdash; 猫丸つな (<a href="https://twitter.com/Tuna_VRC0108">@Tuna_VRC0108</a>) <a href="https://twitter.com/Tuna_VRC0108/status/2058495724908675548">2026-05-24 10:30 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@Tuna_VRC0108</strong> <span class="pf-meta">· 2026-05-24 10:30 UTC · ❤ 137 · 🔁 14 · 👁 1,344</span></div><div class="pf-text">初　め　て　の<br><br>Unity<br><br>さ　つ　え　い</div><div class="pf-link"><a href="https://x.com/Tuna_VRC0108/status/2058495724908675548">https://x.com/Tuna_VRC0108/status/2058495724908675548</a></div></figcaption></figure>
+<figure class="tweet-card"><blockquote class="twitter-tweet" data-lang="ja"><p lang="ja" dir="ltr">今unityで衣装貫通チェックしてるんやけど、Robust Weight Transferがガチで有能過ぎて驚くほど貫通ない…<br><br>お見逸れしたぜ…</p>&mdash; りなくん (<a href="https://twitter.com/rinakorokoro_">@rinakorokoro_</a>) <a href="https://twitter.com/rinakorokoro_/status/2058420962165702695">2026-05-24 05:32 UTC</a></blockquote><figcaption class="print-fallback"><div class="pf-header"><strong>@rinakorokoro_</strong> <span class="pf-meta">· 2026-05-24 05:32 UTC · ❤ 4 · 🔁 0 · 👁 137</span></div><div class="pf-text">今unityで衣装貫通チェックしてるんやけど、Robust Weight Transferがガチで有能過ぎて驚くほど貫通ない…<br><br>お見逸れしたぜ…</div><div class="pf-link"><a href="https://x.com/rinakorokoro_/status/2058420962165702695">https://x.com/rinakorokoro_/status/2058420962165702695</a></div></figcaption></figure>
+
+<h3>cluster / VRoid 等の周辺</h3>
+<p>cluster ではワールドクラフト派と Unity 派が並走。<a href="https://x.com/kagrra_hiziri">@kagrra_hiziri</a> は「Unity を全く扱えない素人でもワールドが作れる」と note を公開。VRoid + Unity 経由で VRM 化して VRChat 服を着せるテクニックを <a href="https://x.com/kamatari_san">@kamatari_san</a> が紹介するなど、エコシステム横断の活用例も観察された。</p>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</body>
+</html>
